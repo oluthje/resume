@@ -1,11 +1,11 @@
-import Link from "next/Link";
+// import Link from "next/Link";
 
 export default function Home() {
   return (
     <div className="min-h-screen">
-      <div className="flex justify-end pt-5 pr-20">
+      {/* <div className="flex justify-end pt-5 pr-20">
         <Navbar/>
-      </div>
+      </div> */}
       <main className="flex flex-col items-center justify-between p-24 space-y-2">
         <div>Hi, I&apos;m Oscar</div>
         <div>This website is in progress ¯\_(ツ)_/¯</div>
@@ -15,24 +15,24 @@ export default function Home() {
   );
 }
 
-function Navbar() {
-  return (
-    <ul className="flex flex-row space-x-2 list-none">
-      <li>
-        <Link href="/">
-          Home
-        </Link>
-      </li>
-      <li>
-        <Link href="/">
-          Projects
-        </Link>
-      </li>
-      <li>
-        <Link href="/">
-          About
-        </Link>
-      </li>
-    </ul>
-  )
-}
+// function Navbar() {
+//   return (
+//     <ul className="flex flex-row space-x-2 list-none">
+//       <li>
+//         <Link href="/">
+//           Home
+//         </Link>
+//       </li>
+//       <li>
+//         <Link href="/">
+//           Projects
+//         </Link>
+//       </li>
+//       <li>
+//         <Link href="/">
+//           About
+//         </Link>
+//       </li>
+//     </ul>
+//   )
+// }
