@@ -1,14 +1,15 @@
 import { projects } from '../../projects';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center min-h-screen">
-      <div className="flex w-full max-w-2xl m-auto pt-10">
+    <div className="flex flex-col items-center min-h-screen mb-10">
+      <div className="flex w-full max-w-3xl m-auto pt-10">
         <Navbar/>
       </div>
 
       {/* Introduction */}
-      <div className="flex w-full h-[40rem]">
+      <div className="flex w-full h-[50rem]">
         <Introduction />
       </div>
 
@@ -49,8 +50,8 @@ function HeaderButton({ children, href }: { children?: React.ReactNode, href: st
 
 function Introduction() {
   return (
-    <div className="flex justify-center flex-row justify-between w-full max-w-2xl m-auto">
-      <div className="flex flex-col">
+    <div className="flex justify-center flex-row justify-between w-full max-w-3xl m-auto">
+      <div className="flex flex-col space-y-4">
         <div className="font-bold text-5xl">
           <div>Hello,</div>
           <div>I'm Oscar Luthje</div>
@@ -102,9 +103,9 @@ function ProjectTemplate({
           <img className="bg-red-100 max-h-32 object-contain" src={imageSrc}/>
         )}
       </div>
-      <div>
-        {githubLink && <a href={githubLink} className="font-bold text-xl">Github</a>}
-        {websiteLink && <a href={websiteLink} className="font-bold text-xl">Website</a>}
+      <div className="flex flex-row items-center space-x-2">
+        {githubLink && <GitHubButton link={githubLink}/>}
+        {websiteLink && <WebsiteButton link={websiteLink}/>}
       </div>
 
       {/* Description */}
@@ -129,4 +130,19 @@ function ProjectTemplate({
 
     </div>
   )
+}
+
+function GitHubButton({ link }: { link: string }) {
+  return (
+    <a href={link} target="_blank" rel="noopener noreferrer" className="flex flex-row border-4 rounded-lg border-black p-1 max-w-max">
+      <GitHubIcon/>
+    <div>Github</div>
+  </a>
+  );
+}
+
+function WebsiteButton({ link }: { link: string }) {
+  return (
+    <a href={link} target="_blank" rel="noopener noreferrer" className="flex flex-row border-4 rounded-lg border-black p-1 max-w-max">Website</a>
+  );
 }

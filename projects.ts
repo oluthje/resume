@@ -10,8 +10,24 @@ export const projects = [
     "websiteLink": "https://store.steampowered.com/app/1389030/End_Reach/",
     "description": "A 2D top down shooter game I developed over the summer of 2020. My goal was to develop a game from start to finish in 4 months and publish it on Steam, a goal I achieved through daily dedication to coding, planning, designing and drawing art.",
     "technologies": [
-      "Godot game engine", "GDScript", "Git"
+      "Godot game engine"
     ],
     "whatILearned": "Developing this game taught me how to stay focused on a single project until completion. I learned to manage a project, push through features, and how to design games.",
-  }
+  },
+  {
+    "title": "Friends App",
+    "images": [
+      "https://user-images.githubusercontent.com/16377965/182944179-75aefde6-db60-4fd4-8083-276c514bbf99.JPEG",
+      "https://user-images.githubusercontent.com/16377965/182944187-d404a687-7d5c-4d2f-8a40-bc4eb882fec8.JPEG",
+      "https://user-images.githubusercontent.com/16377965/182944191-f159436e-a4ee-43cd-a8de-ede9c31b5d84.JPEG",
+    ],
+    "githubLink": "https://github.com/oluthje/friends-app",
+
+    "description": "A mobile app I developed to keep track of friends and social connections.",
+    "technologies": [
+      "Flutter",
+      "Firebase",
+    ],
+    "whatILearned": "Developing this app taught me how to use Firebase to store user data and how to use Flutter to develop mobile applications.",
+  },
 ];
